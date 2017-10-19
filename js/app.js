@@ -55,8 +55,8 @@ $(function(){
       self.contBienes.html('')
 
       bien.map((bien)=>{
-        var bienTemplate = '<div class="itemMostrado card horizontal ">'+
-                              '<div class="col s6">'+
+        var bienTemplate = '<div class="card horizontal">'+
+                              '<div class="card-image">'+
                                 '<img src="img/home.jpg">'+
                               '</div>'+
                               '<div class="col s6">'+
@@ -81,12 +81,13 @@ $(function(){
                                     '<b>Tipo: </b>:tipo:<p></p>'+
                                   '</div>'+
                                 '</div>'+
-                                '<div class="card-action right-align">'+
+                                '<div class="card-action">'+
                                   '<a href="#">Ver más</a>'+
                                 '</div>'+
                               '</div>'+
                             '</div>'+
                             '</div>';
+
 
         var newBien = bienTemplate.replace(':direccion:', bien.Direccion)
                                   .replace(':ciudad:', bien.Ciudad)
